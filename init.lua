@@ -210,6 +210,10 @@ require('lazy').setup({
   {
     'nvim-tree/nvim-web-devicons'
   },
+  {
+    'stevearc/conform.nvim',
+    opts = {},
+  },
 
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
   --       These are some example plugins that I've included in the kickstart repository.
@@ -553,3 +557,12 @@ cmp.setup {
     { name = 'path' },
   },
 }
+
+
+require("conform").setup({
+  format_on_save = {
+    -- These options will be passed to conform.format()
+    timeout_ms = 500,
+    lsp_fallback = true,
+  },
+})
