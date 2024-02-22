@@ -266,6 +266,8 @@ vim.o.termguicolors = true
 
 vim.cmd [[colorscheme tokyonight-night]]
 
+
+vim.cmd [[ au BufReadPost * if line("'\"") >= 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif ]] -- Re-Open at last position
 -- [[ Basic Keymaps ]]
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 
