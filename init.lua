@@ -219,7 +219,13 @@ require('lazy').setup({
   },
   {
     'github/copilot.vim',
-  }
+  },
+  {
+    'NvChad/nvim-colorizer.lua',
+    opts = {
+    },
+  },
+
 
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
   --       These are some example plugins that I've included in the kickstart repository.
