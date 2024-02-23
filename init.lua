@@ -214,6 +214,9 @@ require('lazy').setup({
     'stevearc/conform.nvim',
     opts = {},
   },
+  {
+    'github/copilot.vim',
+  }
 
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
   --       These are some example plugins that I've included in the kickstart repository.
@@ -566,3 +569,5 @@ require("conform").setup({
     lsp_fallback = true,
   },
 })
+
+vim.g.copilot_assume_mapped = true
