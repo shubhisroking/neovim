@@ -225,6 +225,11 @@ require('lazy').setup({
     opts = {
     },
   },
+  {
+    'nvim-treesitter/nvim-treesitter-context',
+    opts = {
+    },
+  }
 
 
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
